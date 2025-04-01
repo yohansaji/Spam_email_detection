@@ -3,13 +3,13 @@ import pickle
 import numpy as np
 
 # Load pickled models and vectorizers
-with open("logistic_regression.pkl", "rb") as log_reg_file:
+with open("spam_classifierLR.pkl", "rb") as log_reg_file:
     log_reg_model = pickle.load(log_reg_file)
-with open("nb_model.pkl", "rb") as nb_file:
+with open("spam_classifierNB.pkl", "rb") as nb_file:
     nb_model = pickle.load(nb_file)
-with open("tfidf_vectorizer_logreg.pkl", "rb") as logreg_vec_file:
+with open("tfidf_vectorizerLR.pkl", "rb") as logreg_vec_file:
     logreg_vectorizer = pickle.load(logreg_vec_file)
-with open("tfidf_vectorizer_nb.pkl", "rb") as nb_vec_file:
+with open("tfidf_vectorizerNB.pkl", "rb") as nb_vec_file:
     nb_vectorizer = pickle.load(nb_vec_file)
 
 # Function to preprocess text
